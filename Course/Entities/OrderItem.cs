@@ -16,9 +16,10 @@
             Price = price;
             Product = product;
         }
+
         public double SubTotal()
         {
-            return Quantity * Price;
+            return (double) Quantity * Price;
         }
     }
 }

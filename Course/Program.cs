@@ -16,16 +16,14 @@ namespace Course
             string email = Console.ReadLine();
             Console.Write("Birth date (DD/MM/YYYY): ");
             DateTime birth = DateTime.Parse(Console.ReadLine());
-            
+
             Client client = new Client(name, email, birth);
 
             Console.WriteLine("Enter order data:");
             Console.Write("Status: ");
-            OrderStatus orderStatus = (OrderStatus)Enum.Parse(typeof(OrderStatus),Console.ReadLine());
+            OrderStatus status = (OrderStatus)Enum.Parse(typeof(OrderStatus), Console.ReadLine());
 
-            Order order = new Order(DateTime.Now, orderStatus, client);
-
-
+            Order order = new Order(DateTime.Now, status, client);
             Console.Write("How many items to this order? ");
             int n = int.Parse(Console.ReadLine());
 
@@ -33,18 +31,18 @@ namespace Course
             {
                 Console.WriteLine($"Enter #{i} item data:");
                 Console.Write("Product name: ");
-                string nameProduct = Console.ReadLine();
-                Console.Write("Product price: ");
-                double priceProduct = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                string productName = Console.ReadLine();
+                Console.Write("Product name: ");
+                double productPrice = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
                 Console.Write("Quantity: ");
                 int quantity = int.Parse(Console.ReadLine());
 
-                Product product = new Product(nameProduct, priceProduct);
-                OrderItem orderItem = new OrderItem(quantity, priceProduct, product);
-                
-                order.AddItem(orderItem);
+                Product product = new Product(productName, productPrice);
+                OrderItem item = new OrderItem(quantity, productPrice, product);
+                order.AddItem(item);
             }
             Console.WriteLine();
+            Console.WriteLine("ORDER SUMMARY:");
             Console.WriteLine(order);
         }
     }

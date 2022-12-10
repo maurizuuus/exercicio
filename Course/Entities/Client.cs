@@ -12,11 +12,11 @@ namespace Course.Entities
         {
         }
 
-        public Client(string name, string email, DateTime birth)
+        public Client(string name, string email, DateTime brith)
         {
             Name = name;
             Email = email;
-            Birth = birth;
+            Birth = brith;
         }
     }
 }

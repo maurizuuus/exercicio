@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Course.Entities
+﻿namespace Course.Entities
 {
     internal class Product
     {

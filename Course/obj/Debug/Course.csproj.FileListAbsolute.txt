@@ -1,0 +1,8 @@
+C:\temp\ws-vs2022\Course\Course\bin\Debug\Course.exe.config
+C:\temp\ws-vs2022\Course\Course\bin\Debug\Course.exe
+C:\temp\ws-vs2022\Course\Course\bin\Debug\Course.pdb
+C:\temp\ws-vs2022\Course\Course\obj\Debug\Course.csproj.AssemblyReference.cache
+C:\temp\ws-vs2022\Course\Course\obj\Debug\Course.csproj.SuggestedBindingRedirects.cache
+C:\temp\ws-vs2022\Course\Course\obj\Debug\Course.csproj.CoreCompileInputs.cache
+C:\temp\ws-vs2022\Course\Course\obj\Debug\Course.exe
+C:\temp\ws-vs2022\Course\Course\obj\Debug\Course.pdb
